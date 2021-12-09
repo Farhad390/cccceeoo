@@ -1,0 +1,264 @@
+/* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Work+Sans:wght@300;400;500;700;900&display=swap');
+@import url(responsive.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --clr-primary-200: #1abc9c;
+    --clr-primary-400: #16a085;
+    --clr-dark-900: #000;
+    --clr-light: #FFF;
+    --clr-light-200: #efefef;
+
+    /* Font */
+    --fnt-work: 'Work Sans', sans-serif;
+    --fnt-montserrat: 'Montserrat', sans-serif;
+}
+body {
+    font-family: var(--fnt-work);
+}
+/* Header */
+header#header {background: var(--clr-primary-400);position: sticky;top: 0;box-shadow: 0px 1px 2px #ffffffe6;}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 4rem;
+}
+.logo {
+    border-right: 2px solid #fff;
+    border-left: 1px solid #fff;
+}
+.logo span {
+
+font-size: 1.5rem;
+
+font-weight: 400;
+
+color: var(--clr-light);
+
+margin: 0 1rem;
+}
+
+nav#nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav#nav li {
+    margin-left: 1rem;
+}
+
+nav#nav a {
+    text-decoration: none;
+    color: var(--clr-light-200);
+    font-weight: 500;
+}
+/* Header Content */
+#header_content {
+    background-image: linear-gradient(to right, #23173bf5, #2ebf9154),url(img/banner.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+.banner span {
+    color: var(--clr-light-200);
+}
+.banner h1 {
+    color: var(--clr-light);
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    font-family: var(--fnt-montserrat);
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.banner {
+    width: 38rem;
+    padding-left: 4rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--clr-light);
+    background: var(--clr-primary-200);
+    padding: .8rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+/* About me */
+.about_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_img img {
+    width: 94%;
+    border-radius: .3em;
+}
+
+.about_img {
+    width: 50%;
+    display: flex;
+}
+
+.about_des {
+    width: 50%;
+}
+section#about_me {
+    padding: 6.2rem 4rem;
+    background: var(--clr-dark-900);
+}
+
+.about_dess span {
+    color: var(--clr-light-200);
+}
+
+.about_des h2 {
+    color: var(--clr-light);
+    font-family: var(--fnt-montserrat);
+}
+
+.about_des span {
+    color: var(--clr-light-200);
+}
+
+.about_des p {
+    color: var(--clr-light-200);
+    margin: 2.5rem 0rem;
+    font-size: .99rem;
+}
+
+a.btn.ab_btn {
+    padding: .5rem 2.5rem;
+}
+/* CEO Description */
+.ceo_content {
+    text-align: center;
+}
+
+.ceo_content img {
+    width: 28%;
+    box-shadow: 0px 0px 1px 5px #5ca294;
+}
+
+section#ceo_desc {
+    padding: 6rem 4rem;
+    background: linear-gradient(to right, #16a08569, #1abc9c85);
+}
+
+.ceo_content p {
+    margin-bottom: 3rem;
+}
+
+.ceo_content {
+    line-height: 1.7;
+}
+
+.ceo_content span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Contact Form */
+.contact_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google_map {
+    width: 50%;
+}
+
+.google_map iframe {
+    width: 430px;
+    height: 490px;
+}
+
+.contact_content {
+    padding: 6rem 4rem;
+}
+
+section#contact {
+    background: #16a085;
+}
+.con_des {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.con_des h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--clr-light);
+}
+
+.con_des p {
+    font-weight: 500;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    word-spacing: -1px;
+}
+
+.contact_add {
+    text-align: center;
+    line-height: 1.5;
+    color: var(--clr-light);
+    margin-bottom: 1rem;
+    border: 2px dashed;
+    padding: .3rem;
+}
+.contact_input label {
+    display: block;
+    font-size: .9rem;
+    color: var(--clr-light-200);
+    margin-bottom: .4rem;
+}
+
+.contact_input input {
+    width: 100%;
+    height: 1.8rem;
+    padding: 0 .5rem;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+}
+textarea#massage {
+    width: 100%;
+    height: 5rem;
+    outline: none;
+    resize: none;
+    padding: .5rem;
+    border: none;
+    font-family: var(--fnt-work);
+}
+sup {
+    color: orange;
+}
+.contact_btn {
+    margin-top: 2rem;
+    text-align: end;
+}
+footer {padding: 4rem;background: #16a085;color: var(--clr-light);}
+.ceo_content img:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.ceo_content img:nth-child(2) {
+    border-radius: 0 20px 20px 0;
+}

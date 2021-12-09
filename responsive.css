@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+    nav#nav {
+        display: none;
+    }
+    section#ceo_desc {
+        padding: 6rem 1rem !important;
+    }
+    .btn {
+        font-size: 1rem !important;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        border-right: none !important;
+        border-left: none !important;
+
+    }
+    .logo span {
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        padding: 0 1rem;
+        font-size: 1.2rem !important;
+    }
+    .banner {
+        text-align: center;
+        padding: 0 1rem !important;
+        margin: auto;
+    }
+    .banner h1 {
+        font-size: 2.5rem !important;
+    }
+    .menu {
+        padding: 1.2rem 2rem !important;
+    }
+    .about_des {
+        width: auto !important;
+    }
+    .about_img {
+        display: none !important;
+    }
+    .about_content {
+        text-align: center;
+    }
+
+
+    
+    .contact_content {
+        padding: 6rem 0rem !important;
+    }
+    .con_des {
+        padding: 0 1rem;
+    }
+    section#about_me {
+        padding: 6.2rem 2rem !important;
+    }
+    .about_des h2 {
+        font-size: 1.8rem;
+    }
+    .about_des span {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+
+}
+
+@media (max-width: 999px) {
+    .contact_form {
+        flex-direction: column;
+    }
+    .google_map {
+        width: 100% !important;
+    }
+    .google_map iframe {
+        width: 100% !important;
+    }
+    .contact_info {
+        padding: 6rem 2rem;
+    }
+    .contact_input input {
+        height: 3rem !important;
+    }
+}
